@@ -912,3 +912,58 @@ header .sobre{
     
  
 } */
+
+
+
+/* Modal  */
+
+.WindowArea {
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    background-color:rgba(255, 255, 255, 0.5);
+    display:none;
+    transition: all ease .5s;
+    justify-content: center;
+    align-items: center;
+    overflow-y:auto;
+    
+}
+
+
+.pizzaWindowBody {
+    width:900px;
+    background-color:#FFF;
+    border-radius:10px;
+    box-shadow:0px 0px 15px #999;
+    display:flex;
+    margin:20px 0px;
+    height: 300px;
+    
+}
+
+.pizzaInfo {
+    flex:1;
+    font-family:'Hepta Slab', Helvetica, Arial;
+    padding-bottom:50px;
+    padding: 20px;
+}
+
+.pizzaInfo--cancelButton {
+    display:inline-block;
+    cursor:pointer;
+    
+}
+
+.pizzaInfo--cancelButton {
+    margin-top:210px;
+    padding:20px 30px;
+    border-radius:20px;
+    background-color:#48d05f;
+    color:#FFF;
+    display:inline-block;
+    cursor:pointer;
+    margin-right:30px;
+}
