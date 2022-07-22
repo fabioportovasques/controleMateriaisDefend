@@ -967,9 +967,10 @@ header .sobre{
 
 .form {
     flex:1;
-    font-family:'Hepta Slab', Helvetica, Arial;
+    font-family: 'Roboto', sans-serif;
     padding-bottom:50px;
     padding: 20px;
+  
 }
 
 .cancelButton {
@@ -1002,7 +1003,13 @@ header .sobre{
 
 form{
     padding:20px;
+    outline: 0;
 }
+
+input[type=text]{
+    outline:none;
+}
+
 label{
     padding:5px;
 }
