@@ -38,6 +38,8 @@ function abrirModal(){
         document.querySelector('.WindowArea').style.opacity = 1;
     },200);
 
+    document.querySelector('aside').style.display='none';
+
     console.log('clicou aqui') ;  
 }
 
@@ -46,4 +48,7 @@ function closeModal(){
     setTimeout(()=>{
         document.querySelector('.WindowArea').style.display = 'none';
     }, 500);
+
+    document.querySelector('aside').style.display='flex';
+
 }

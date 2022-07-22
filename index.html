@@ -81,14 +81,90 @@
         <!-- area do modal -->
 
         <div class="WindowArea">
-            <div class="pizzaWindowBody">
-                <div class="pizzaInfo">
-                
-                    <div class="pizzaInfo--cancelButton" onclick="closeModal()">Fechar</div>
-                </div>
+            <div class="WindowBody">
+                <div class="form">
+                    <form method="POST" action="">
+                        <!--comeco da linha-->
+                        <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Nome Do Produto</label>
+                                            <input type="text" name="nome-produto" class="form-control" id="nome-produto">
+                                    </div>        
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Data de Início</label>
+                                            <input type="date" name="data-inicio" class="form-control" id="data-inicio">
+                                    </div>        
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Data Final</label>
+                                            <input type="date" name="data-final" class="form-control" id="data-final">
+                                    </div>        
+                                </div>
+
+                        <!-- FIm da linha-->        
+                        </div>
+    
+                            <!--comeco da linha-->
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Nome do Responsável</label>
+                                            <input type="text" name="nome-responsavel" class="form-control" id="nome-responsavel">
+                                    </div>        
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Autorizado por quem?</label>
+                                        <select class="form-control" name="nome-autorizado" id="nome-autorizado">
+                                            <option>Camila</option>
+                                            <option>Oliveira</option>
+                                            <option>Sandro</option>
+                                            <option>Tati</option>
+                                        </select>
+                                    </div>        
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Quem está liberando o material?</label>
+                                            <input type="text" name="nome-liberado" class="form-control" id="nome-liberado">
+                                    </div>        
+                                </div>
+
+                        <!-- FIm da linha-->        
+                        </div>
+
+                        
+                        <!--comeco da linha-->
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>OBS</label>
+                                    <textarea  name="obs" id="obs"  class="form-control"></textarea>
+                                </div>        
+                            </div>
+
+                    <!-- FIm da linha-->        
+                    </div>
+                    
+                            <div class="buttons">
+
+                                        <div class="cancelButton" onclick="closeModal()">Cancelar</div>
+
+                                        <div class="cadastrarButton">Cadastrar</div>
+                            </div>    
+                        
+                        </form>
+                    </div>
             </div>
-    </div>
+        </div>
        
+        
+
         <!--
             <div class="card1">
                     <div class="card" style="width: 18rem;">

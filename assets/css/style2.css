@@ -698,6 +698,8 @@ header .sobre{
         
     }
 
+   
+
    /* a classe a baixo é chamada no arquivo index.php para chamar o menu. OBS:
    importante que o aside venha abaixo do .menu nav ul, aside para que ele não abra na tela    */
 
@@ -827,7 +829,26 @@ header .sobre{
     
     }
     
+    .buttons{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        
+    }
 
+    .cancelButton, .cadastrarButton{
+        margin-left:30px;
+        margin-top:10px;
+        text-align:center;
+        width:100%;
+    }
+
+    .cancelButton{
+        margin-bottom:3px;
+    }
+
+  
 
     /* .bem-vindo{
         margin-left:120px
@@ -933,37 +954,70 @@ header .sobre{
 }
 
 
-.pizzaWindowBody {
+.WindowBody {
     width:900px;
     background-color:#FFF;
     border-radius:10px;
     box-shadow:0px 0px 15px #999;
     display:flex;
     margin:20px 0px;
-    height: 300px;
+   
     
 }
 
-.pizzaInfo {
+.form {
     flex:1;
     font-family:'Hepta Slab', Helvetica, Arial;
     padding-bottom:50px;
     padding: 20px;
 }
 
-.pizzaInfo--cancelButton {
+.cancelButton {
     display:inline-block;
     cursor:pointer;
     
 }
 
-.pizzaInfo--cancelButton {
-    margin-top:210px;
-    padding:20px 30px;
-    border-radius:20px;
+.cancelButton {
+   
+    padding:10px 20px;
+    border-radius:2px;
     background-color:#48d05f;
     color:#FFF;
     display:inline-block;
     cursor:pointer;
     margin-right:30px;
+}
+
+.cadastrarButton {
+    padding:10px 20px;
+    border-radius:2px;
+    background-color:#48d05f;
+    color:#FFF;
+    display:inline-block;
+    cursor:pointer;
+    margin-right:30px;
+
+}
+
+form{
+    padding:20px;
+}
+label{
+    padding:5px;
+}
+form textarea{
+    margin-bottom:10px;
+}
+
+
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.cancelButton:hover{
+    background-color:red;
 }
