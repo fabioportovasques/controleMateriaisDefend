@@ -750,7 +750,7 @@ header .sobre{
         display:flex;
         justify-content:space-around;
         align-items:center;
-        height:100px
+        height:80px
     }
 
 
@@ -848,7 +848,7 @@ header .sobre{
         margin-bottom:3px;
     }
 
-  
+    
 
     /* .bem-vindo{
         margin-left:120px
@@ -1001,23 +1001,27 @@ header .sobre{
 
 }
 
-form{
+/* form{
     padding:20px;
-    outline: 0;
-}
+   
+} */
 
-input[type=text]{
+/* form input:focus, textarea:focus, select:focus{
     outline:none;
-}
+    border: 0;
+} */
 
 label{
     padding:5px;
 }
 form textarea{
     margin-bottom:10px;
+    
 }
 
-
+.outline{
+    outline: 0;
+}
 
 .buttons{
     display:flex;
@@ -1027,4 +1031,64 @@ form textarea{
 
 .cancelButton:hover{
     background-color:red;
+}
+
+
+/*Modal Sobre */
+
+
+.WindowAreaSobre {
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    background-color:rgba(255, 255, 255, 0.5);
+    display:none;
+    transition: all ease .5s;
+    justify-content: center;
+    align-items: center;
+    overflow-y:auto;
+    
+}
+
+
+.WindowBodySobre {
+    width:900px;
+    background-color:#FFF;
+    border-radius:10px;
+    box-shadow:0px 0px 15px #999;
+    display:flex;
+    margin:0px 0px;
+    display: flex;
+    flex-direction: column;
+   
+   
+   
+    
+}
+
+.WindowAreaSobre h2 {
+    padding: 40px ;
+    font-size: 22px;
+    text-align: justify;
+}
+
+.WindowAreaSobre span{
+    font-size: 16px;
+    font-weight: 600px;
+    margin-left: 560px;
+}
+
+.cancelButtonSobre {
+   
+    padding:10px 20px;
+    border-radius:2px;
+    background-color:#48d05f;
+    color:#FFF;
+    display:inline-block;
+    cursor:pointer;
+    margin-left: -50px;
+    margin-bottom: 20px;
+    margin-top: 5px;
 }

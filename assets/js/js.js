@@ -39,8 +39,34 @@ function abrirModal(){
     },200);
 
     document.querySelector('aside').style.display='none';
+    // document.querySelector('header').style.display='none';
 
     console.log('clicou aqui') ;  
+}
+
+function abrirModalSobre(){
+
+    document.querySelector('.WindowAreaSobre').style.opacity=0;
+    document.querySelector('.WindowAreaSobre').style.display = 'flex';
+    setTimeout(()=>{
+        document.querySelector('.WindowAreaSobre').style.opacity = 1;
+    },200);
+
+    document.querySelector('aside').style.display='none';
+    // document.querySelector('header').style.display='none';
+
+    console.log('clicou aqui') ;  
+}
+
+
+function closeModalSobre(){
+    document.querySelector('.WindowAreaSobre').style.opacity = 0;
+    setTimeout(()=>{
+        document.querySelector('.WindowAreaSobre').style.display = 'none';
+    }, 500);
+
+    document.querySelector('aside').style.display='flex';
+    // document.querySelector('header').style.display='flex';
 }
 
 function closeModal(){
@@ -50,5 +76,5 @@ function closeModal(){
     }, 500);
 
     document.querySelector('aside').style.display='flex';
-
+    // document.querySelector('header').style.display='flex';
 }
