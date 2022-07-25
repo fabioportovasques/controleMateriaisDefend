@@ -186,6 +186,164 @@ header .sobre{
     font-size:30px;
 }
 
+
+/* Modal  */
+
+.WindowArea {
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    background-color:rgba(255, 255, 255, 0.5);
+    display:none;
+    transition: all ease .5s;
+    justify-content: center;
+    align-items: center;
+    overflow-y:auto;
+    
+}
+
+
+.WindowBody {
+    width:900px;
+    background-color:#FFF;
+    border-radius:10px;
+    box-shadow:0px 0px 15px #999;
+    display:flex;
+    margin:20px 0px;
+   
+    
+}
+
+.form {
+    flex:1;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom:50px;
+    padding: 20px;
+  
+}
+
+.cancelButton {
+    display:inline-block;
+    cursor:pointer;
+    
+}
+
+.cancelButton {
+   
+    padding:10px 20px;
+    border-radius:2px;
+    background-color:#48d05f;
+    color:#FFF;
+    display:inline-block;
+    cursor:pointer;
+    margin-right:30px;
+}
+
+.cadastrarButton {
+    padding:10px 20px;
+    border-radius:2px;
+    background-color:#48d05f;
+    color:#FFF;
+    display:inline-block;
+    cursor:pointer;
+    margin-right:30px;
+
+}
+
+/* form{
+    padding:20px;
+   
+} */
+
+/* form input:focus, textarea:focus, select:focus{
+    outline:none;
+    border: 0;
+} */
+
+label{
+    padding:5px;
+}
+form textarea{
+    margin-bottom:10px;
+    
+}
+
+.outline{
+    outline: 0;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.cancelButton:hover{
+    background-color:red;
+}
+
+
+/*Modal Sobre */
+
+
+.WindowAreaSobre {
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    background-color:rgba(255, 255, 255, 0.5);
+    display:none;
+    transition: all ease .5s;
+    justify-content: center;
+    align-items: center;
+    overflow-y:auto;
+    
+}
+
+
+.WindowBodySobre {
+    width:900px;
+    background-color:#FFF;
+    border-radius:10px;
+    box-shadow:0px 0px 15px #999;
+    display:flex;
+    margin:0px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.WindowAreaSobre, .texto {
+    padding: 40px ;
+    font-size: 22px;
+    text-align: justify;
+    line-height: 38px;
+}
+
+.WindowAreaSobre span{
+    font-size: 16px;
+    font-weight: 600px;
+    margin-left: 560px;
+}
+
+.cancelButtonSobre {
+   
+    padding:20px 30px;
+    width: 200px;
+    border-radius:2px;
+    background-color:#48d05f;
+    color:#FFF;
+    display:inline-block;
+    cursor:pointer;
+    margin-left: -50px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+
 /*Responsividade */
 
 @media (min-width:2001px) AND (max-width:2500px){
@@ -848,247 +1006,68 @@ header .sobre{
         margin-bottom:3px;
     }
 
-    
-
-    /* .bem-vindo{
-        margin-left:120px
-    } */
-
-    /* .card--sub--1, .card--sub--2{
-        margin-left:50px;
-    }
-    .card--sub--1{
-        margin-bottom:20px;
-        margin-top:100px;
+    .WindowbodySobre{
+        width: 300px;
     }
 
-    .titulo{
-        font-size:14px;
-    }
-    .bem-vindo, .sobre{
-        font-size:12px;
-    }
-
-    aside{
+    .WindowAreaSobre, .texto1{
+        padding: 5px;
+        font-size: 14px;
+        text-align: justify;
         
+        
+    }
+
+    .WindowBodySobre {
+        
+       
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .WindowAreaSobre {
+        
+        position:fixed;
+        left:0;
+        top:0;
+        bottom:0;
+        background-color:rgba(255, 255, 255, 0.5);
         display:none;
-    } */
-
-
-}
-
-
-/* @media (max-width:800px) {
-
-    .titulo{
-        margin-left: 780px;
-        font-size:10px;
-    }
-
-    .card--sub--1{
-        margin-left:1230px;
-    }
-
-      .card--sub--1, .card--sub--2{
-        margin-left:80px;
-        width:210px;
+        transition: all ease .5s;
+        justify-content: center;
+        align-items: center;
+        overflow-y:auto;
+        width: 400px;
+        right: 40px;
         
     }
-  
-} */
-
-/* @media (max-width:800px){
-  
-    .titulo{
-        margin-left: 210px;
-        font-size:12px;
-    }
-    .card--sub--1, .card--sub--2{
-        margin-left:80px;
-        width:210px;
-        height:140px;
-    }
-
-    .card-title{
-        font-size:14px;
+   
+    .cancelButtonSobre {
+   
+        padding:5px 10px;
+        width: 100px;
+        border-radius:2px;
+        background-color:#48d05f;
+        color:#FFF;
+        display:inline-block;
+        cursor:pointer;
+        margin-left: -50px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        text-align: center;
     }
 
-    .dev{
-        font-size:20px;
+    .WindowAreaSobre span{
+        font-size: 12px;
+        margin-left: 10px;
     }
 
-    .sub--title{
-        font-size:20px;
-    }
-
-    .icones--card{
-        font-size:18px;
-    }
-
-    a{
-        width:90px;
-        height:40px;
-        font-size:10px;
-    }
-    
- 
-} */
 
 
-
-/* Modal  */
-
-.WindowArea {
-    position:fixed;
-    left:0;
-    top:0;
-    bottom:0;
-    right:0;
-    background-color:rgba(255, 255, 255, 0.5);
-    display:none;
-    transition: all ease .5s;
-    justify-content: center;
-    align-items: center;
-    overflow-y:auto;
-    
 }
 
 
-.WindowBody {
-    width:900px;
-    background-color:#FFF;
-    border-radius:10px;
-    box-shadow:0px 0px 15px #999;
-    display:flex;
-    margin:20px 0px;
-   
-    
-}
-
-.form {
-    flex:1;
-    font-family: 'Roboto', sans-serif;
-    padding-bottom:50px;
-    padding: 20px;
-  
-}
-
-.cancelButton {
-    display:inline-block;
-    cursor:pointer;
-    
-}
-
-.cancelButton {
-   
-    padding:10px 20px;
-    border-radius:2px;
-    background-color:#48d05f;
-    color:#FFF;
-    display:inline-block;
-    cursor:pointer;
-    margin-right:30px;
-}
-
-.cadastrarButton {
-    padding:10px 20px;
-    border-radius:2px;
-    background-color:#48d05f;
-    color:#FFF;
-    display:inline-block;
-    cursor:pointer;
-    margin-right:30px;
-
-}
-
-/* form{
-    padding:20px;
-   
-} */
-
-/* form input:focus, textarea:focus, select:focus{
-    outline:none;
-    border: 0;
-} */
-
-label{
-    padding:5px;
-}
-form textarea{
-    margin-bottom:10px;
-    
-}
-
-.outline{
-    outline: 0;
-}
-
-.buttons{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.cancelButton:hover{
-    background-color:red;
-}
 
 
-/*Modal Sobre */
 
 
-.WindowAreaSobre {
-    position:fixed;
-    left:0;
-    top:0;
-    bottom:0;
-    right:0;
-    background-color:rgba(255, 255, 255, 0.5);
-    display:none;
-    transition: all ease .5s;
-    justify-content: center;
-    align-items: center;
-    overflow-y:auto;
-    
-}
-
-
-.WindowBodySobre {
-    width:900px;
-    background-color:#FFF;
-    border-radius:10px;
-    box-shadow:0px 0px 15px #999;
-    display:flex;
-    margin:0px 0px;
-    display: flex;
-    flex-direction: column;
-   
-   
-   
-    
-}
-
-.WindowAreaSobre h2 {
-    padding: 40px ;
-    font-size: 22px;
-    text-align: justify;
-}
-
-.WindowAreaSobre span{
-    font-size: 16px;
-    font-weight: 600px;
-    margin-left: 560px;
-}
-
-.cancelButtonSobre {
-   
-    padding:10px 20px;
-    border-radius:2px;
-    background-color:#48d05f;
-    color:#FFF;
-    display:inline-block;
-    cursor:pointer;
-    margin-left: -50px;
-    margin-bottom: 20px;
-    margin-top: 5px;
-}
