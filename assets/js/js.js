@@ -32,16 +32,36 @@ window.onload = function() {
 
 function abrirModal(){
 
-    document.querySelector('.WindowArea').style.opacity=0;
-    document.querySelector('.WindowArea').style.display = 'flex';
-    setTimeout(()=>{
-        document.querySelector('.WindowArea').style.opacity = 1;
-    },200);
+    // window.addEventListener('resize', function () {
+    //     var largura = window.innerWidth;
+    
+    //     if (largura < 600){
 
-    document.querySelector('aside').style.display='none';
-    // document.querySelector('header').style.display='none';
+            document.querySelector('.WindowArea').style.opacity=0;
+            document.querySelector('.WindowArea').style.display = 'flex';
+            setTimeout(()=>{
+                document.querySelector('.WindowArea').style.opacity = 1;
+            },200);
 
-    console.log('clicou aqui') ;  
+            document.querySelector('aside').style.display='none';
+            document.querySelector('header').style.display='block';
+
+            console.log('clicou aqui') ;
+
+        // }else {   
+        //     console.log('não abriu o modal');
+
+        // }
+           
+
+        // });
+}
+
+function abrirInsertMateriais(){
+
+    window.location.href="insertMateriais.html";
+
+
 }
 
 function abrirModalSobre(){
