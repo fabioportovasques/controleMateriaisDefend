@@ -44,7 +44,7 @@ function abrirModal(){
             },200);
 
             document.querySelector('aside').style.display='none';
-            document.querySelector('header').style.display='block';
+            //document.querySelector('header').style.display='block';
 
             console.log('clicou aqui') ;
 

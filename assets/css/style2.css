@@ -187,6 +187,10 @@ header .sobre{
 }
 
 
+.header--prod{
+    display: none;
+}
+
 /* Modal  */
 
 .WindowArea {
@@ -315,7 +319,7 @@ form textarea{
     flex-direction: column;
 }
 
-.WindowAreaSobre, .texto {
+.WindowAreaSobre, .texto1 {
     padding: 40px ;
     font-size: 22px;
     text-align: justify;
@@ -750,8 +754,6 @@ form textarea{
     }
 
    
-
-
 }
 
 
@@ -856,6 +858,20 @@ form textarea{
         
     }
 
+    .WindowAreaSobre, .texto1{
+        padding: 10px;
+        font-size: 14px;
+        text-align: justify;
+        line-height: 20px;
+        
+    }
+
+
+    .WindowAreaSobre span{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
    
 
    /* a classe a baixo é chamada no arquivo index.php para chamar o menu. OBS:
@@ -882,11 +898,20 @@ form textarea{
         display:none;
      }
 
-     .prod{
-        margin-top: 250px;
+     .header--prod{
+        display: block;
+        margin-top: 180px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-left: 50px;
     }
+    
 
 
+    /* .header--prod{
+        display: block;
+    } */
 
 }
 
@@ -1028,11 +1053,14 @@ form textarea{
         padding: 10px;
         font-size: 12px;
         text-align: justify;
-        line-height: 12px;
+        line-height: 14px;
         
     }
 
-    
+    .WindowAreaSobre span{
+        font-size: 10px;
+        margin-left: 10px;
+    }
 
     .WindowBodySobre {
         
@@ -1079,16 +1107,17 @@ form textarea{
 
     
 
-    .WindowAreaSobre span{
-        font-size: 12px;
-        margin-left: 10px;
+    .header--prod{
+        display: block;
+        margin-top: 180px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-left: 50px;
     }
-
     
 
-    .prod{
-        margin-top: 220px;
-    }   
+    
 
 }
 
