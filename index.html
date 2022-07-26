@@ -17,7 +17,12 @@
 
 <script src="assets/js/js.js"></script>
 
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
 
+</script>
 
 </head>
 <body>
@@ -158,8 +163,21 @@
                                 </div>        
                             </div>
 
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Empresa Responsável pelo Concerto</label>
+                                    <select class="form-control" name="situacao" id="situacao" data-toggle="tooltip" 
+                                    data-placement="bottom" title="Só prencha se o equipamento for para concerto">
+                                        <option>Seleciona uma Opção</option>
+                                        <option>MPE</option>
+                                        <option>outras</option>
+                                    </select>
+                                </div>        
+                            </div>
 
-                            <div class="col-md-8">
+
+
+                            <div class="col-md-4">
                                 <div class="form-group">
                                     <label>OBS</label>
                                     <textarea  name="obs" id="obs"  class="outline form-control"></textarea>
