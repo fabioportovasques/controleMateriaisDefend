@@ -282,6 +282,7 @@ form textarea{
     display:flex;
     justify-content:center;
     align-items:center;
+    margin-top: 20px;
 }
 
 .cancelButton:hover{
@@ -346,6 +347,9 @@ form textarea{
     margin-top: 5px;
     text-align: center;
 }
+
+
+
 
 
 /*Responsividade */
