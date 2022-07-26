@@ -912,7 +912,9 @@ form textarea{
         display:flex;
         justify-content:space-around;
         align-items:center;
-        height:80px
+        height:80px;
+        
+
     }
 
 
@@ -991,13 +993,15 @@ form textarea{
     
     }
     
-    .buttons{
+     .buttons{
         display:flex;
         flex-direction:column;
         justify-content:center;
         align-items:center;
         
     }
+
+    
 
     .cancelButton, .cadastrarButton{
         margin-left:30px;
@@ -1006,13 +1010,19 @@ form textarea{
         width:100%;
     }
 
+    
+
     .cancelButton{
         margin-bottom:3px;
     }
 
+    
+
     .WindowbodySobre{
         width: 300px;
     }
+
+    
 
     .WindowAreaSobre, .texto1{
         padding: 10px;
@@ -1022,12 +1032,16 @@ form textarea{
         
     }
 
+    
+
     .WindowBodySobre {
         
        
         display:flex;
         flex-direction: column;
     }
+
+    
     
     .WindowAreaSobre {
         
@@ -1045,6 +1059,8 @@ form textarea{
         right: 40px;
         
     }
+
+    
    
     .cancelButtonSobre {
    
@@ -1061,14 +1077,18 @@ form textarea{
         text-align: center;
     }
 
+    
+
     .WindowAreaSobre span{
         font-size: 12px;
         margin-left: 10px;
     }
 
+    
+
     .prod{
-        margin-top: 250px;
-    }
+        margin-top: 220px;
+    }   
 
 }
 
