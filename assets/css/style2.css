@@ -153,7 +153,7 @@ header .sobre{
 }
 
 .card--sub--1,.card--sub--2{
-    border:1px solid #2C3639;
+    /* border:1px solid #2C3639; */
     box-shadow: 4px 5px 5px green;
     
 }
@@ -753,11 +753,102 @@ form textarea{
         font-size:12px;
     }
 
+    .menu nav ul, aside{  
+        display: flex;
+        flex-direction: column;
+        justify-content:baseline;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(3, 136, 209, 0.71);
+        width: 40vw;
+        height: calc(100vh);
+        left: 0;
+        
+    } 
+
+    aside{
+        display:flex;
+     }
    
 }
 
+@media (min-width:768px) AND (max-width:899px){
+    .header--prod{
+        margin-top: 10px;
+    }
 
-@media (min-width:700px) AND (max-width:899px){
+
+    .sobre{
+        display:none;
+    }
+
+    .menu-opener{
+        margin-top:-10px;
+        display:block;
+    }
+
+    .menu--opener1,.menu--opener2,.menu--opener3{
+        width:40px;
+        padding:4px;
+        border-bottom:4px solid;
+        display:block;
+        
+    }
+
+
+    .menu nav ul, aside{
+ 
+        
+        
+        display: flex;
+        flex-direction: column;
+        justify-content:baseline;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(3, 136, 209, 0.71);
+        width: 60vw;
+        height: calc(100vh);
+        left: 0;
+        
+    } 
+    
+    aside{
+        display:none;
+     }
+
+     .WindowAreaSobre, .texto1{
+        padding: 10px;
+        font-size: 14px;
+        text-align: justify;
+        line-height: 20px;
+        
+    }
+
+
+    .WindowAreaSobre span{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .cancelButtonSobre {
+   
+        padding:5px 10px;
+        width: 100px;
+        border-radius:2px;
+        background-color:#48d05f;
+        color:#FFF;
+        display:inline-block;
+        cursor:pointer;
+        margin-left: -50px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+
+}
+
+@media (min-width:700px) AND (max-width:767px){
 
     .container--pessoal{
         height:1000px;
@@ -907,6 +998,29 @@ form textarea{
         margin-left: 50px;
     }
     
+
+    .buttons{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        
+    }
+
+    
+
+    .cancelButton, .cadastrarButton{
+        margin-left:30px;
+        margin-top:10px;
+        text-align:center;
+        width:100%;
+    }
+
+    
+
+    .cancelButton{
+        margin-bottom:3px;
+    }
 
 
     /* .header--prod{
