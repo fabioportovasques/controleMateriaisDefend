@@ -267,7 +267,7 @@ header .sobre{
 } */
 
 label{
-    padding:5px;
+    padding:10px;
 }
 form textarea{
     margin-bottom:10px;
@@ -289,6 +289,10 @@ form textarea{
     background-color:red;
 }
 
+
+select option{
+    font-size: 14px;
+}
 
 /*Modal Sobre */
 
@@ -349,8 +353,74 @@ form textarea{
 }
 
 
+.WindowAreaPesquisa {
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    background-color:rgba(255, 255, 255, 0.5);
+    display:none;
+    transition: all ease .5s;
+    justify-content: center;
+    align-items: center;
+    overflow-y:auto;
+    
+}
 
 
+.WindowBodyPesquisa {
+    width:550px;
+    background-color:#FFF;
+    border-radius:10px;
+    box-shadow:0px 0px 15px #999;
+    display:flex;
+    margin:0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+
+.cancelButtonPesquisa {
+   
+    padding:10px 20px;
+    width: 140px;
+    border-radius:2px;
+    background-color:#48d05f;
+    color:#FFF;
+    display:inline-block;
+    cursor:pointer;
+    margin-top: -10px;
+    text-align: center;
+}
+
+
+
+.pesquisar{
+    font-size: 16px;
+    padding: 8px 15px;
+    border: 1px solid #999999;
+    outline: 0;
+    width: 100%;
+    max-width: 500px;
+    
+}
+
+.buttonPesquisar{
+    border: 0;
+    background-color: transparent;
+    margin-left: -50px;
+    cursor: pointer;
+   
+}
+
+.buttonPesquisar img{
+    width:30px;
+    height: 30px;
+}
 
 /*Responsividade */
 
@@ -1233,8 +1303,33 @@ form textarea{
         font-weight: 600;
         margin-left: 50px;
     }
-    
 
+     .WindowBodyPesquisa{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+    } 
+
+    .pesquisar{
+        font-size: 16px;
+        padding: 8px 15px;
+        border: 1px solid #999999;
+        outline: 0;
+        width: auto;
+
+        
+    }
+    
+    .buttonPesquisar{
+        border: 0;
+        background-color: transparent;
+        /* margin-left: 450px;
+        margin-top: -20px; */
+        cursor: pointer;
+       
+    }
     
 
 }

@@ -33,7 +33,7 @@ $(function () {
     <header>
         <div class="titulo">controle de materiais -- defend--</div>
         <div class="bem-vindo">Bem vindo:Fulano</div>
-        <div class="sobre">Sobre</div>
+        <!-- <div class="sobre">Sobre</div> -->
      <div class="menu-opener">
         <div class="menu--opener1"> </div>
         <div class="menu--opener2"> </div>
@@ -50,7 +50,7 @@ $(function () {
 
                 <li class="fa-solid fa-plus"  onclick="abrirModal()">&nbsp;<a href=#>lançar materiais</a></li>
                 <li class="fa-solid fa-trash">&nbsp;<a href="#">Baixar Materiais</a></li>
-                <li class="fa-solid fa-magnifying-glass">&nbsp;<a href="#">Pesquisar Materiais</a></li>
+                <li class="fa-solid fa-magnifying-glass" onclick="abrirModalPesquisa()">&nbsp;<a href="#">Pesquisar Materiais</a></li>
                 <li class="fa-solid fa-address-card" onclick="abrirModalSobre()">&nbsp;<a href="#">Sobre</a></li>
 
 
@@ -64,7 +64,7 @@ $(function () {
         <div class="card--sub--1">
             <div class="card" >
                     <div class="card-body">
-                        <h5 class="card-title">Materiais emprestados</h5>
+                        <h5 class="card-title">Saída de Equipamentos</h5>
                         <div class="sub--title ">30</div>
                         <div class="icones--card"><i class="fa-solid fa-check"></i></div>
                         <a href="#" class="btn btn-success"><span>Acessar</span></a><br />
@@ -74,7 +74,7 @@ $(function () {
         <div class="card--sub--2">
             <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">7 dias sem devolução</h5>
+                        <h5 class="card-title">Equipamentos em Atraso</h5>
                         <div class="sub--title dev">10</div>
                         <div class="icones--card"><i class="fa-solid fa-bell-slash"></i></div>
                         <a href="#" class="btn btn-success "><span>Acessar</span></a>
@@ -104,7 +104,7 @@ $(function () {
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label>Data de Início</label>
+                                        <label>Data Inícial</label>
                                             <input type="date" name="data-inicio" class="form-control" id="data-inicio">
                                     </div>        
                                 </div>
@@ -165,7 +165,7 @@ $(function () {
 
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label>Empresa Responsável pelo Concerto</label>
+                                    <label>Empresa (Responsável Concerto)</label>
                                     <select class="form-control" name="situacao" id="situacao" data-toggle="tooltip" 
                                     data-placement="bottom" title="Só prencha se o equipamento for para concerto">
                                         <option>Seleciona uma Opção</option>
@@ -220,6 +220,34 @@ $(function () {
                     </div>
                 </div>        
         
+                 <!-- area do modal Pesquisar -->
+
+                 <div class="WindowAreaPesquisa">
+                    <div class="WindowBodyPesquisa">
+                      
+                        <form method="POST" action="">
+                                            <label class="prod">Pesquisar Material/Equipamento</label><br />
+                                                <input type="text" name="nome-produto" class="pesquisar" id="nome-produto" placeholder="Pesquisar">
+                                                <button class="buttonPesquisar">
+                                                    <img src="assets/images/loupe.png"/>
+                                                </button>
+        
+    
+                       
+                        <div class="buttons">
+
+                            <div class="cancelButtonPesquisa" onclick="closeModalPesquisa()">SAIR</div>
+                            <!-- <div class="subimitButtonPesquisa">Pesquisar</div> -->
+
+                        </form>
+                         </div>    
+            
+
+                    </div>
+                </div>   
+
+
+
         </div>
     </section>
 </div>   
