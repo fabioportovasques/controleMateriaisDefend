@@ -1103,7 +1103,7 @@ select option{
 
 }
 
-@media (min-width:300px) AND (max-width:699px){
+@media (min-width:200px) AND (max-width:699px){
 
     .dashboard{
         
