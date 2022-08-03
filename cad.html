@@ -63,111 +63,116 @@ $(function () {
         <div class="dashboard">
 
             <form method="POST" action="">
-                <!--comeco da linha-->
-                <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <div class="header--prod">Lançamento de Materiais/Equipamentos</div>
-                                <label>Nome Do Produto</label>
-                                    <input type="text" name="nome-produto" class="form-control" id="nome-produto">
-                            </div>        
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>Data Inícial</label>
-                                    <input type="date" name="data-inicio" class="form-control" id="data-inicio">
-                            </div>        
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>Data Final</label>
-                                    <input type="date" name="data-final" class="form-control" id="data-final">
-                            </div>        
-                        </div>
-
-                <!-- FIm da linha-->        
-                </div>
-
-                    <!--comeco da linha-->
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>Nome do Responsável</label>
-                                    <input type="text" name="nome-responsavel" class="form-control" id="nome-responsavel">
-                            </div>        
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>Autorizado por quem?</label>
-                                <select class="form-control" name="nome-autorizado" id="nome-autorizado">
-                                    <option>Seleciona uma Opção</option>
-                                    <option>Camila</option>
-                                    <option>Oliveira</option>
-                                    <option>Sandro</option>
-                                    <option>Tati</option>
-                                </select>
-                            </div>        
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>Quem está liberando o material?</label>
-                                    <input type="text" name="nome-liberado" class="form-control" id="nome-liberado">
-                            </div>        
-                        </div>
-
-                <!-- FIm da linha-->        
-                </div>
-
-                
-                <!--comeco da linha-->
-                <div class="row">
-
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Situação</label>
-                            <select class="form-control" name="situacao" id="situacao">
-                                <option>Seleciona uma Opção</option>
-                                <option>Encaminhado para Conserto</option>
-                                <option>Emprestado</option>
-                            </select>
-                        </div>        
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Empresa (Responsável Concerto)</label>
-                            <select class="form-control" name="situacao" id="situacao" data-toggle="tooltip" 
-                            data-placement="bottom" title="Só prencha se o equipamento for para concerto">
-                                <option>Seleciona uma Opção</option>
-                                <option>MPE</option>
-                                <option>outras</option>
-                            </select>
-                        </div>        
-                    </div>
-
-
-
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>OBS</label>
-                            <textarea  name="obs" id="obs"  class="outline form-control"></textarea>
-                        </div>        
-                    </div>
-
-                <!-- FIm da linha-->        
-                </div>
+                <div class="form">
                     
-                    <div class="buttons">
+                    <form method="POST" action="">
+                        <!--comeco da linha-->
+                        <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <div class="header--prod">Lançamento de Materiais</div>
+                                        <label class="prod">Nome Do Produto</label>
+                                            <input type="text" name="nome-produto" class="form-control" id="nome-produto" placeholder="Nome Do Produto">
+                                    </div>        
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="prod">Cod Produto</label>
+                                            <input type="text" name="cod-produto" class="form-control" id="cod-produto" placeholder="Codigo do Produto">
+                                    </div>        
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Data Inícial</label>
+                                            <input type="date" name="data-inicio" class="form-control" id="data-inicio">
+                                    </div>        
+                                </div>
+                                <!-- FIm da linha-->        
+                                </div>
 
-                                <div class="cancelButton" onclick="closeModal()">Cancelar</div>
+                                 <!--comeco da linha-->
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Data Final</label>
+                                                <input type="date" name="data-final" class="form-control" id="data-final">
+                                        </div>        
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Nome do Responsável</label>
+                                                <input type="text" name="nome-responsavel" class="form-control" id="nome-responsavel" placeholder="Nome do Responsável">
+                                        </div>        
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Autorizado por quem?</label>
+                                            <select class="form-control" name="nome-autorizado" id="nome-autorizado">
+                                                <option>Seleciona uma Opção</option>
+                                                <option>Camila</option>
+                                                <option>Oliveira</option>
+                                                <option>Sandro</option>
+                                                <option>Tati</option>
+                                            </select>
+                                        </div>        
+                                    </div>
+                                     <!-- FIm da linha-->        
+                                    </div>
 
-                                <div class="cadastrarButton">Cadastrar</div>
-                    </div>    
-                
-                    </form>
+                                    <!--comeco da linha-->
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Quem está liberando o material?</label>
+                                                    <input type="text" name="nome-liberado" class="form-control" id="nome-liberado" placeholder="Quem Está Liberando o Material?">
+                                            </div>        
+                                        </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Situação</label>
+                                                    <select class="form-control" name="situacao" id="situacao">
+                                                        <option>Seleciona uma Opção</option>
+                                                        <option>Encaminhado para Conserto</option>
+                                                        <option>Emprestado</option>
+                                                    </select>
+                                                </div>        
+                                            </div>
 
-                </div>
-                <!--Fim da linha-->
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Empresa (Responsável Concerto)</label>
+                                                    <select class="form-control" name="situacao" id="situacao" data-toggle="tooltip" 
+                                                    data-placement="bottom" title="Só prencha se o equipamento for para concerto">
+                                                        <option>Seleciona uma Opção</option>
+                                                        <option>MPE</option>
+                                                        <option>outras</option>
+                                                    </select>
+                                                </div>        
+                                            </div>
+
+                                             <!-- FIm da linha-->        
+                                            </div>
+                                            <!--comeco da linha-->
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label>OBS</label>
+                                                        <textarea  name="obs" id="obs"  class="outline form-control"></textarea>
+                                                    </div>        
+                                                </div>
+
+                                             </div>
+
+                    
+                            <div class="buttons">
+
+                                        <div class="cancelButton" onclick="closeModal()">Cancelar</div>
+
+                                        <div class="cadastrarButton">Cadastrar</div>
+                            </div>    
+                        
+                        </form>
+                    </div>
 
         </div>
 
@@ -185,7 +190,13 @@ $(function () {
                                     <div class="form-group">
                                         <div class="header--prod">Lançamento de Materiais Modal</div>
                                         <label class="prod">Nome Do Produto</label>
-                                            <input type="text" name="nome-produto" class="form-control" id="nome-produto">
+                                            <input type="text" name="nome-produto" class="form-control" id="nome-produto" placeholder="Nome Do Produto">
+                                    </div>        
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="prod">Cod Produto</label>
+                                            <input type="text" name="cod-produto" class="form-control" id="cod-produto" placeholder="Codigo do Produto">
                                     </div>        
                                 </div>
                                 <div class="col-md-4">
@@ -194,84 +205,82 @@ $(function () {
                                             <input type="date" name="data-inicio" class="form-control" id="data-inicio">
                                     </div>        
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>Data Final</label>
-                                            <input type="date" name="data-final" class="form-control" id="data-final">
-                                    </div>        
+                                <!-- FIm da linha-->        
                                 </div>
 
-                        <!-- FIm da linha-->        
-                        </div>
-    
-                            <!--comeco da linha-->
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>Nome do Responsável</label>
-                                            <input type="text" name="nome-responsavel" class="form-control" id="nome-responsavel">
-                                    </div>        
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>Autorizado por quem?</label>
-                                        <select class="form-control" name="nome-autorizado" id="nome-autorizado">
-                                            <option>Seleciona uma Opção</option>
-                                            <option>Camila</option>
-                                            <option>Oliveira</option>
-                                            <option>Sandro</option>
-                                            <option>Tati</option>
-                                        </select>
-                                    </div>        
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>Quem está liberando o material?</label>
-                                            <input type="text" name="nome-liberado" class="form-control" id="nome-liberado">
-                                    </div>        
-                                </div>
+                                 <!--comeco da linha-->
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Data Final</label>
+                                                <input type="date" name="data-final" class="form-control" id="data-final">
+                                        </div>        
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Nome do Responsável</label>
+                                                <input type="text" name="nome-responsavel" class="form-control" id="nome-responsavel" placeholder="Nome do Responsável">
+                                        </div>        
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Autorizado por quem?</label>
+                                            <select class="form-control" name="nome-autorizado" id="nome-autorizado">
+                                                <option>Seleciona uma Opção</option>
+                                                <option>Camila</option>
+                                                <option>Oliveira</option>
+                                                <option>Sandro</option>
+                                                <option>Tati</option>
+                                            </select>
+                                        </div>        
+                                    </div>
+                                     <!-- FIm da linha-->        
+                                    </div>
 
-                        <!-- FIm da linha-->        
-                        </div>
+                                    <!--comeco da linha-->
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Quem está liberando o material?</label>
+                                                    <input type="text" name="nome-liberado" class="form-control" id="nome-liberado" placeholder="Quem Está Liberando o Material?">
+                                            </div>        
+                                        </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Situação</label>
+                                                    <select class="form-control" name="situacao" id="situacao">
+                                                        <option>Seleciona uma Opção</option>
+                                                        <option>Encaminhado para Conserto</option>
+                                                        <option>Emprestado</option>
+                                                    </select>
+                                                </div>        
+                                            </div>
 
-                        
-                        <!--comeco da linha-->
-                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Empresa (Responsável Concerto)</label>
+                                                    <select class="form-control" name="situacao" id="situacao" data-toggle="tooltip" 
+                                                    data-placement="bottom" title="Só prencha se o equipamento for para concerto">
+                                                        <option>Seleciona uma Opção</option>
+                                                        <option>MPE</option>
+                                                        <option>outras</option>
+                                                    </select>
+                                                </div>        
+                                            </div>
 
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>Situação</label>
-                                    <select class="form-control" name="situacao" id="situacao">
-                                        <option>Seleciona uma Opção</option>
-                                        <option>Encaminhado para Conserto</option>
-                                        <option>Emprestado</option>
-                                    </select>
-                                </div>        
-                            </div>
+                                             <!-- FIm da linha-->        
+                                            </div>
+                                            <!--comeco da linha-->
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label>OBS</label>
+                                                        <textarea  name="obs" id="obs"  class="outline form-control"></textarea>
+                                                    </div>        
+                                                </div>
 
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>Empresa (Responsável Concerto)</label>
-                                    <select class="form-control" name="situacao" id="situacao" data-toggle="tooltip" 
-                                    data-placement="bottom" title="Só prencha se o equipamento for para concerto">
-                                        <option>Seleciona uma Opção</option>
-                                        <option>MPE</option>
-                                        <option>outras</option>
-                                    </select>
-                                </div>        
-                            </div>
+                                             </div>
 
-
-
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>OBS</label>
-                                    <textarea  name="obs" id="obs"  class="outline form-control"></textarea>
-                                </div>        
-                            </div>
-
-                    <!-- FIm da linha-->        
-                    </div>
                     
                             <div class="buttons">
 
