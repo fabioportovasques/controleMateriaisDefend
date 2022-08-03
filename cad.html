@@ -47,8 +47,9 @@ $(function () {
             <div class="menu--item">Baixas</div>
             <div class="menu--item">Pesquisar</div> -->
             <ul>
-
-                <li class="fa-solid fa-plus"  onclick="abrirModal()">&nbsp;<a href=#>lançar materiais</a></li>
+                
+                <li class="fa-solid fa-table-columns">&nbsp;<a href="index.html">Dashboard</a></li>
+                <li class="fa-solid fa-plus">&nbsp;<a href="cad.html">lançar materiais</a></li>
                 <li class="fa-solid fa-trash">&nbsp;<a href="#">Baixar Materiais</a></li>
                 <li class="fa-solid fa-magnifying-glass" onclick="abrirModalPesquisa()">&nbsp;<a href="#">Pesquisar Materiais</a></li>
                 <li class="fa-solid fa-address-card" onclick="abrirModalSobre()">&nbsp;<a href="#">Sobre</a></li>
@@ -283,7 +284,26 @@ $(function () {
                     </div>
             </div>
         </div>
+<!-- area do modal sobre -->
 
+<div class="WindowAreaSobre">
+    <div class="WindowBodySobre">
+       <div class="texto1">
+            A plicação tem como objetivo gerenciar a saída de materiais do estoque, bem como 
+            saber quem foi a pessoa que está de posse do referido material, também é posível observar
+            na Dashboard da aplicação as notificações de materiais com 30 dias ou mais sem devolução.
+       </div>
+
+       <span>Sistema Desenvolvido por Fábio Vasques</span>
+       
+        <div class="buttons">
+
+            <div class="cancelButtonSobre" onclick="closeModalSobre()">SAIR</div>
+         </div>    
+
+
+    </div>
+</div>    
 
 
 </body>

@@ -136,7 +136,7 @@ header .sobre{
 
 
 .dashboard{
-    display:none;
+    display:flex;
     justify-content:space-around;
     align-items:center;
 }
@@ -294,7 +294,7 @@ select option{
     font-size: 14px;
 }
 
-/*Modal Sobre */
+/*Modal */
 
 
 .WindowAreaSobre {
@@ -851,6 +851,10 @@ select option{
         margin-top: 10px;
     }
 
+    header{
+        margin-left: -850px;
+        
+    }
 
     .sobre{
         display:none;

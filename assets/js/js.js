@@ -104,13 +104,15 @@ function closeModalSobre(){
 }
 
 function closeModal(){
-    document.querySelector('.WindowArea').style.opacity = 0;
+    document.querySelector('.WindowAreaInserir').style.opacity = 0;
     setTimeout(()=>{
-        document.querySelector('.WindowArea').style.display = 'none';
+        document.querySelector('.WindowAreaInserir').style.display = 'none';
     }, 500);
 
     document.querySelector('aside').style.display='flex';
     // document.querySelector('header').style.display='flex';
+    window.location.href="index.html";
+
 }
 
 function closeModalPesquisa(){
